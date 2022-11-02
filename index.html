@@ -5,20 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title>Hello world!</title>
-
-    <!-- import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <title> Hurricane Preparedness Checklist </title>
     
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    
+    <link rel="stylesheet" href="/style.css" />
+
     <script src="/script.js" defer></script>
   </head>
   <body>
     <!-- this is the start of content -->
-    <h1>Hello World!</h1>
-    <p>Wow, this is where my content will go!</p>
     
-    <p>
-      A new paragraph! Wow!
-    </p>
+    <div class="content-container">
+      <!-- three placeholder sections of content -->
+      <section class="full-screen" id="slide-1">
+        <h1> Huricane Preparedness
+        
+        </h1>
+        <p>
+          First piece of content.
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-2">
+        <p>
+          Second piece of content.
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id= "slide-3">
+        <p>
+          Third piece of content.
+        </p>
+      </section>
+
+    <i class="bi bi-arrow-left-square left" onclick="returnContent()"></i>
+      <i class="bi bi-arrow-right-square right" onclick="advanceContent()"></i>
+
+    </div>
   </body>
 </html>
