@@ -23,3 +23,67 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+.content-container {
+  position: relative;
+}
+
+.content-container i {
+  font-size: 28px;
+  position: absolute;
+  color: blue;
+  display: inline-block;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* every element with this class takes up the full 
+ width and height of the screen */
+.full-screen {
+  border: 1px solid grey;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 40px;
+}
+
+.full-screen p {
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#slide-1 {
+  background: #d62828;
+}
+
+#slide-2 {
+  background: #8ecae6;
+}
+
+#slide-3 {
+  background: #ffafcc;
+}
+
+
+
+i:hover {
+  background-color: yellow;
+  font-size: 28px;
+}
