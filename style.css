@@ -155,6 +155,11 @@ button{
   background:white;
 }
 
+.downloadButton {
+  position:absolute;
+  
+}
+
 #checklist {
   position:absolute;
     top:0;
