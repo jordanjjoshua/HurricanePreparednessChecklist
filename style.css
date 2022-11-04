@@ -49,6 +49,18 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align:center;
+}
+
+p{
+  text-align: center;
+}
+
+a{
+  color: yellow;
+}
+
 /* every element with this class takes up the full 
  width and height of the screen */
 .full-screen {
@@ -82,6 +94,21 @@ h1 {
 }
 
 
+#slide-4{
+  background: red;
+}
+
+#slide-5{
+  background:purple;
+}
+
+#slide-6{
+  background:green;
+}
+
+#slide-7{
+  background:red;
+}
 
 i:hover {
   background-color: yellow;
