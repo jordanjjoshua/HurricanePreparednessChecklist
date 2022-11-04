@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Changes the tab icon to hurricane logo-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
-
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/e390b26c-be5e-424a-b8b2-09e4e73d1bdb/1925975-200.png?v=1667584902095"
+    />
+    <!-- Shows up on tab-->
     <title>Hurricane Preparedness Checklist</title>
-<!-- import bootstrap icons -->
+    <!-- import bootstrap icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
@@ -15,20 +19,25 @@
     <link rel="stylesheet" href="style.css" />
  <!-- import htmlto canvas-->
      <script
+
       src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
       defer
     ></script>
     <script src="script.js" defer></script>
   </head>
-  <body>
-    <!-- this is the start of content -->
-<div>
+  <!--Opening a headder to add the button for opening the checklist-->
+  <header>
+    <div>
       <button id="toggle-checklist" onclick="toggleChecklist()">
         Open checklist
       </button>
     </div>
+  </header>
+  <body>
+    <!-- this is the start of content -->
+
     <div class="content-container">
-      <!-- three placeholder sections of content -->
+      <!-- Each section of content / each slide -->
       <section class="full-screen" id="slide-1">
         <h1>Huricane Preparedness</h1>
         <h2>Are you prepared for a Hurricane?</h2>
@@ -60,7 +69,6 @@
           possession in the case of a hurricane. Some of the items that should
           be included in this kit should be bandages, gauze pads, tweezers,
           antiseptic, gloves, and soap.
-  
         </p>
       </section>
 
@@ -92,7 +100,6 @@
           available in which these documents can be stored in at all times. For
           another level of safety, any document you wish to protect should also
           be electronically scanned in and saved.
-
         </p>
       </section>
 
@@ -119,32 +126,226 @@
           airtight waterproof bag.
         </p>
       </section>
+
+      <section class="full-screen hidden" id="slide-8">
+        <h2>Medication and Medical devices</h2>
+        <p>
+          If any member of your household has any medical needs, you will need
+          to be prepared with any equipment that is needed for any treatments.
+          This can include batteries for medical devices and medications. You
+          should have at least a week's supply of any medication along with a
+          copy of their prescriptions.
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-9">
+        <h2>Bring any outside furniture or plants inside</h2>
+        <p>
+          Any outdoor items that are not secured into the ground should be
+          brought inside prior to a hurricane. Not only should patio furniture,
+          trash cans, and decorative items be brought in, but also your plants!
+          Although your first option should be to bring in any outside
+          furniture, there are other options of securing outdoor items if
+          absolutely necessary.
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-10">
+        <h2>Have entertainment</h2>
+        <p>
+          Especially with kids in the household, entertainment without power is
+          important for preparing for a hurricane. Make sure any electronics
+          such as tablets, phones, and handheld gaming systems that are going to
+          be used for entertainment are fully charged and you also have portable
+          chargers on hand. Other options such as books, puzzles, board games,
+          and crafts are also great to help pass the time while you are stuck
+          inside during a hurricane.
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-11">
+        <h2>Know where your nearest shelter is</h2>
+        <p>
+          During a hurricane you should always be prepared to evacuate. This
+          means knowing your evacuation route and where you can go in case of an
+          emergency. In South Florida, most elementary, middle, and high schools
+          are often used as shelters in the event of a hurricane. Make sure you
+          know where your
+          <a href="https://www.floridadisaster.org/planprepare/shelters/"
+            >nearest shelter</a
+          >
+          is and the safest route to get there!
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-12">
+        <h2>Make an emergency evacuation bag</h2>
+        <p>
+          An emergency or “go” bag should be packed and ready to go in case of
+          emergency evacuation. This bag should include the aforementioned items
+          on this list such as food, water, a first aid kit, medications, and
+          other essentials you would need in the event you need to evacuate your
+          home. This bag needs to be easy to carry and in a spot where you can
+          quickly grab it.
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-13">
+        <h2>Plan for your pets</h2>
+        <p>
+          Our pets are just as much of a part of the family as we are, therefore
+          we need to make sure they are also safe and cared for during a
+          hurricane. Stocking up on supplies such as food or medications for our
+          pets in advance is crucial. Make sure to include any pets in the water
+          count for the household as well! Some evacuation shelters are also pet
+          friendly so they can come along with you.
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-14">
+        <h2>Stay Safe During Hurricane Season!</h2>
+        <p>
+          With this checklist you should hopefully be ready for hurricane season
+          to keep you and your loved ones safe in the event of a hurricane. Use
+          the checklist and download buttons provided to save a copy of your
+          completed checklist!
+        </p>
+      </section>
+      <!--For the boot strap arrows-->
       <i class="bi bi-arrow-left-square left" onclick="returnContent()"></i>
       <i class="bi bi-arrow-right-square right" onclick="advanceContent()"></i>
     </div>
-      <div class="checklist-container">
+    <!--Start of the checklist tab-->
+    <div class="checklist-container">
       <section id="checklist" class="hidden">
-        <h3>
-          Hurricane Preparedness Checklist
-          </h3>
-        <p>
-          This is what I have prepared
-        </p>
+        <!--Checklist heading and P-->
+        <h3 class="titleinsidecheck">Hurricane Preparedness Checklist</h3>
+        <p class="insidecheck">I have...</p>
         <div>
+          <!--Start of checklist items-->
           <input type="checkbox" name="input1" />
-          <label for="input1">placeholder option</label>
+          <label for="input1">Enough food for three days</label>
         </div>
 
         <div>
           <input type="checkbox" name="input2" />
-          <label for="input2">placeholder option</label>
+          <label for="input2">One gallon of water per person per day</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="input3" />
+          <label for="input3">Non-perishable food</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input4" />
+          <label for="input4">A first aid kit</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input7" />
+          <label for="input7">Gloves</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input8" />
+          <label for="input8">Window shutters</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input9" />
+          <label for="input9">Hurricane glass windows</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input10" />
+          <label for="input10">A document safety box</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input11" />
+          <label for="input11">Collected important documents</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input12" />
+          <label for="input12">An understanding of my flood zone</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input13" />
+          <label for="input13">Unplugged electronics</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input14" />
+          <label for="input14"
+            >Stored electronics in a high and dry place</label
+          >
+        </div>
+        <div>
+          <input type="checkbox" name="input15" />
+          <label for="input15"
+            >Stored small electronics in airtight containers</label
+          >
+        </div>
+        <div>
+          <input type="checkbox" name="input16" />
+          <label for="input16">A weeks supply of medication</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input17" />
+          <label for="input17">Charged medical equipment</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input18" />
+          <label for="input18">Brought furniture inside</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input19" />
+          <label for="input19">Brought plants inside</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input20" />
+          <label for="input20">Brought in trash cans</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input21" />
+          <label for="input21">Gathered board games</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input22" />
+          <label for="input22">Charged all electronics</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input23" />
+          <label for="input23">Researched where my nearest shelter is</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input24" />
+          <label for="input24">Packed my emergency evacuation bag</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input25" />
+          <label for="input25">A stock of pet food</label>
+        </div>
+        <div>
+          <input type="checkbox" name="input26" />
+          <label for="input26"
+            >A plan of where my pets will go in case of evacuation</label
+          >
         </div>
       </section>
-        <div>
-          <button class="downloadButton" onclick="downloadChecklist()">
-          Download my checklist as an image!
-        </button>
-        </div>
     </div>
   </body>
+
+  <!--Added in footer to hold the download button at the bottom of the page-->
+  <footer>
+    <div>
+      <button class="downloadButton" onclick="downloadChecklist()">
+        Download your checklist as an image!
+      </button>
+    </div>
+  </footer>
+
+  <!--font information-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Concert+One&display=swap"
+    rel="stylesheet"
+  />
+
+
 </html>
