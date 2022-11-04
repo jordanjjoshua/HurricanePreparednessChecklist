@@ -6,19 +6,31 @@
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
     <title>Hurricane Preparedness Checklist</title>
-
+<!-- import bootstrap icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
 
     <link rel="stylesheet" href="style.css" />
+<<<<<<< glitch
+ <!-- import htmlto canvas-->
+     <script
+      src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"
+      defer
+    ></script>
+=======
 
+>>>>>>> main
     <script src="script.js" defer></script>
   </head>
   <body>
     <!-- this is the start of content -->
-
+<div>
+      <button id="toggle-checklist" onclick="toggleChecklist()">
+        Open checklist
+      </button>
+    </div>
     <div class="content-container">
       <!-- three placeholder sections of content -->
       <section class="full-screen" id="slide-1">
@@ -41,9 +53,7 @@
           non-perishable food and water. A good rule of thumb with water is to
           have one gallon of water per person per day. Avoid drinking any tap
           water at this time, but if absolutely necessary make sure to boil any
-          water before consumption. <br />
-          <input type="checkbox" class="checkboxes" />
-          <label for="checkboxes">Add to list here. </label>
+          water before consumption.
         </p>
       </section>
 
@@ -54,9 +64,7 @@
           possession in the case of a hurricane. Some of the items that should
           be included in this kit should be bandages, gauze pads, tweezers,
           antiseptic, gloves, and soap.
-          <br />
-          <input type="checkbox" class="checkboxes" />
-          <label for="checkboxes">Add to list here. </label>
+  
         </p>
       </section>
 
@@ -68,9 +76,7 @@
           hurricane shutters which are used to easily cover windows while others
           require a little more work to be manually put on. No matter what type
           of shutters you have, it is important to get your shutters up as soon
-          as a hurricane watch is put into effect in your area. <br />
-          <input type="checkbox" class="checkboxes" />
-          <label for="checkboxes">Add to list here. </label>
+          as a hurricane watch is put into effect in your area.
         </p>
       </section>
 
@@ -90,9 +96,7 @@
           available in which these documents can be stored in at all times. For
           another level of safety, any document you wish to protect should also
           be electronically scanned in and saved.
-          <br />
-          <input type="checkbox" class="checkboxes" />
-          <label for="checkboxes">Add to list here. </label>
+
         </p>
       </section>
 
@@ -106,10 +110,6 @@
           important in helping prepare for any storm. There are various online
           tools to help find your flooding zones, our favorite being
           <a href="http://eyesontherise.org/app/#tab1">eyesontherise.org!</a>
-
-          <br />
-          <input type="checkbox" class="checkboxes" />
-          <label for="checkboxes">Add to list here. </label>
         </p>
       </section>
 
@@ -121,15 +121,34 @@
           electronics are unplugged and stored up high to avoid any contact with
           water. If any electronic devices are small enough, store them in an
           airtight waterproof bag.
-
-          <br />
-          <input type="checkbox" class="checkboxes" />
-          <label for="checkboxes">Add to list here. </label>
         </p>
       </section>
-
       <i class="bi bi-arrow-left-square left" onclick="returnContent()"></i>
       <i class="bi bi-arrow-right-square right" onclick="advanceContent()"></i>
+    </div>
+      <div class="checklist-container">
+      <section id="checklist" class="hidden">
+        <h3>
+          Hurricane Preparedness Checklist
+          </h3>
+        <p>
+          This is what I have prepared
+        </p>
+        <div>
+          <input type="checkbox" name="input1" />
+          <label for="input1">placeholder option</label>
+        </div>
+
+        <div>
+          <input type="checkbox" name="input2" />
+          <label for="input2">placeholder option</label>
+        </div>
+      </section>
+        <div>
+          <button class="downloadButton" onclick="downloadChecklist()">
+          Download my checklist as an image!
+        </button>
+        </div>
     </div>
   </body>
 </html>

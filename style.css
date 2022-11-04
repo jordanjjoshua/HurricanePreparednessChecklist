@@ -26,6 +26,7 @@ video {
 
 .content-container {
   position: relative;
+  height:80vh;
 }
 
 .content-container i {
@@ -35,6 +36,13 @@ video {
   display: inline-block;
   margin-top: 15px;
   cursor: pointer;
+}
+
+i:hover {
+  font-size:40px;
+    color:black;
+  opacity:0.5;
+  transition: all 0.5s;
 }
 
 .left {
@@ -110,7 +118,55 @@ a{
   background:red;
 }
 
-i:hover {
-  background-color: yellow;
-  font-size: 28px;
+#slide-8{
+  background:red;
+}
+
+#slide-9{
+  background:red;
+}
+
+#slide-10{
+  background:red;
+}
+
+#slide-11{
+  background:red;
+}
+
+#slide-12{
+  background:red;
+}
+
+#slide-13{
+  background:red;
+}
+
+#slide-14{
+  background:red;
+}
+
+button{
+  border:none;
+  cursor: pointer;
+  border-radius:5px; 
+  padding:5px;
+  margin:5px;
+  background:white;
+}
+
+#checklist {
+  position:absolute;
+    top:0;
+  right:0;
+  bottom:0;
+  width:200px;
+  padding: 25px; 
+  background: pink;
+}
+
+.hidden-checklist {
+  width: 0px;
+  overflow: hidden;
+  padding:0;
 }
