@@ -5,45 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title> Hurricane Preparedness Checklist </title>
-    
-  
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Hurricane Preparedness Checklist</title>
 
-    
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
 
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/style.css" />
+
+    <script src="/script.js" defer></script>
   </head>
   <body>
     <!-- this is the start of content -->
-    
+
     <div class="content-container">
       <!-- three placeholder sections of content -->
       <section class="full-screen" id="slide-1">
-        <h1> Hurricane Preparedness Checklist
-        
-        </h1>
+        <h1>Huricane Preparedness</h1>
+        <h2>Are you prepared for a Hurricane?</h2>
         <p>
-          First piece of content.
+          With hurricane season starting in June and ending in November, the
+          threat of hurricanes in South Florida are very real. Are you and your
+          home ready for a major hurricane? Create a checklist to make sure you
+          have everything you need!
         </p>
       </section>
 
       <section class="full-screen hidden" id="slide-2">
+        <h2>Stock Up on Food and Water</h2>
         <p>
-          Second piece of content.
+          Although there is no reason to panic buy everything at the grocery
+          store, you do want to make sure you are well prepared for the upcoming
+          hurricane. You should have at least a three-day supply of
+          non-perishable food and water. A good rule of thumb with water is to
+          have one gallon of water per person per day. Avoid drinking any tap
+          water at this time, but if absolutely necessary make sure to boil any
+          water before consumption. <br />
+          <input type="checkbox" class="checkboxes" />
+          <label for="checkboxes">Add to list here. </label>
         </p>
       </section>
 
-      <section class="full-screen hidden" id= "slide-3">
+      <section class="full-screen hidden" id="slide-3">
+        <h2>Have a First Aid Kit</h2>
         <p>
-          Third piece of content.
+          Every household should have a well-equipped first aid kit in their
+          possession in the case of a hurricane. Some of the items that should
+          be included in this kit should be bandages, gauze pads, tweezers,
+          antiseptic, gloves, and soap.
+          <br />
+          <input type="checkbox" class="checkboxes" />
+          <label for="checkboxes">Add to list here. </label>
         </p>
       </section>
 
-    <i class="bi bi-arrow-left-square left" onclick="returnContent()"></i>
+      <section class="full-screen hidden" id="slide-4">
+        <h2>Put Up Window Shutters</h2>
+        <p>
+          With hurricane force winds and flying debris, you want your windows
+          protected. Some houses in South Florida are equipped with sliding
+          hurricane shutters which are used to easily cover windows while others
+          require a little more work to be manually put on. No matter what type
+          of shutters you have, it is important to get your shutters up as soon
+          as a hurricane watch is put into effect in your area. <br />
+          <input type="checkbox" class="checkboxes" />
+          <label for="checkboxes">Add to list here. </label>
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-5">
+        <h2>Keep Important Documents Safe</h2>
+        <p>
+          Any important documents that you wish to keep safe should be kept in a
+          sealed waterproof container that can be stored in a dry and easily
+          accessible area. Some documents you may want to store are
+          certificates, identification cards, medical records, and insurance
+          information. For those who want to be prepared for any emergency,
+          there are waterproof and fireproof
+          <a
+            href="https://www.amazon.com/s?k=hurricane+document+bag&i=office-products&crid=3CVUBDZHAY1B2&sprefix=hurricane+document+bag%2Coffice-products%2C120&ref=nb_sb_noss_1"
+            >document boxes</a
+          >
+          available in which these documents can be stored in at all times. For
+          another level of safety, any document you wish to protect should also
+          be electronically scanned in and saved.
+          <br />
+          <input type="checkbox" class="checkboxes" />
+          <label for="checkboxes">Add to list here. </label>
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-6">
+        <h2>Know Your Flooding Zones</h2>
+        <p>
+          Knowing the flooding zones around your house is an important part of
+          preparing for a hurricane in South Florida. Most of the state is under
+          a flood warning during any strong storm, therefore knowing how likely
+          your homes elevation and how much rain it would take to flood is
+          important in helping prepare for any storm. There are various online
+          tools to help find your flooding zones, our favorite being
+          <a href="http://eyesontherise.org/app/#tab1">eyesontherise.org!</a>
+
+          <br />
+          <input type="checkbox" class="checkboxes" />
+          <label for="checkboxes">Add to list here. </label>
+        </p>
+      </section>
+
+      <section class="full-screen hidden" id="slide-7">
+        <h2>Secure Electronics</h2>
+        <p>
+          In the scenario that your house does flood, you want all of the
+          electronics in your house to be secure, this meaning that all
+          electronics are unplugged and stored up high to avoid any contact with
+          water. If any electronic devices are small enough, store them in an
+          airtight waterproof bag.
+
+          <br />
+          <input type="checkbox" class="checkboxes" />
+          <label for="checkboxes">Add to list here. </label>
+        </p>
+      </section>
+
+      <i class="bi bi-arrow-left-square left" onclick="returnContent()"></i>
       <i class="bi bi-arrow-right-square right" onclick="advanceContent()"></i>
-
     </div>
   </body>
 </html>
