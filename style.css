@@ -203,22 +203,8 @@ button {
   top: 0;
   font-family: "Amatic SC", cursive;
   font-family: "Concert One", cursive;
-
-.downloadButton {
-  position:absolute;
-  
 }
 
-#checklist {
-  position:absolute;
-    top:0;
-  right:0;
-  bottom:0;
-  width:200px;
-  padding: 25px; 
-  background: pink;
-
-}
 /*style for the checklist*/
 #checklist {
   position: absolute;
@@ -238,7 +224,6 @@ button {
 .hidden-checklist {
   width: 0px;
   overflow: hidden;
-
   padding: 0;
 }
 
@@ -256,7 +241,5 @@ button {
 /* making the button at the top of the page solid*/
 header {
   background: #37323e;
-
-  padding:0;
 
 }
