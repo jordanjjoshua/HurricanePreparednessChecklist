@@ -38,3 +38,4 @@ const toggleChecklist = () => {
     toggleButton.innerHTML = "Close Checklist";
   }
 };
+
